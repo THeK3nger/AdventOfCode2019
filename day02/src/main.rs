@@ -29,10 +29,6 @@ fn run_program(mut program: Vec<i32>) -> Vec<i32> {
         let idx_b: usize = program[i + 2] as usize;
         let idx_r: usize = program[i + 3] as usize;
         if opcode == 1 {
-            // println!(
-            //     "Doing {}, on idx {} {} result in {}",
-            //     opcode, idxA, idxB, idxR
-            // );
             program[idx_r] = program[idx_a] + program[idx_b];
         } else if opcode == 2 {
             program[idx_r] = program[idx_a] * program[idx_b];
